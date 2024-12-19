@@ -77,8 +77,21 @@
         .paper-box {
     border: 1px solid gray; /* Thin gray border */
     border-radius: 10px; /* Rounded corners */
-/*     padding: 15px; /* Space inside the box */
-    padding: 5px 15px; /* Reduce padding for a shorter box */
+    padding: 15px; /* Space inside the box
+/*     padding: 5px 15px; /* Reduce padding for a shorter box */ 
+    margin-bottom: 20px; /* Space between multiple boxes */
+    background-color: #f9f9f9; /* Light gray background */
+    max-width: 600px; /* Optional: Limit the box width 
+/*     width: 600px; /* Optional: Limit the box width */
+    min-width: 600px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+}
+
+        .shortpaper-box {
+    border: 1px solid gray; /* Thin gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 5px; /* Space inside the box
+/*     padding: 5px 15px; /* Reduce padding for a shorter box */ 
     margin-bottom: 20px; /* Space between multiple boxes */
     background-color: #f9f9f9; /* Light gray background */
     max-width: 600px; /* Optional: Limit the box width 
@@ -212,7 +225,7 @@
 <!--             <p>Hi! I'm Jun Hyun (first name pronounced as <q>Joon-hyeon</q>&mdash;<a href="https://korean-name.com/en/search/준현/"><i>pronunciation guide</i></a>), a 4th-year economics Ph.D. student at University of Pittsburgh. I major in microeconomic theory. My research interest lies in economic contexts in which preferences for non-conventional objects (e.g., beliefs, menus, and preferences) influence our behavior and social interactions.  </p> -->
 <!--             Welcome to my website where I share my research, CV, and working papers. -->
             <h2>Research Interest</h2>
-             <div class="paper-box">   
+             <div class="shortpaper-box">   
              <p class="intro">Microeconomic theory</p>
 <!--              <p>Microeconomic theory  </p> -->
                  </div> 
