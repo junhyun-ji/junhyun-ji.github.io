@@ -35,6 +35,15 @@
     background-color: black; /* Black background on hover */
     color: white; /* White text on hover */
 }
+        .box-container {
+    display: flex; /* Enables flexbox for centering */
+    flex-direction: column; /* Aligns boxes in a vertical column */
+    align-items: center; /* Horizontally centers the boxes */
+    justify-content: center; /* Vertically centers the content (if required) */
+    margin: 20px auto; /* Center horizontally with auto margins */
+    max-width: 800px; /* Optional: Limit the width of the container */
+    text-align: center; /* Center the text inside the container */
+}
         .paper-box {
     border: 1px solid gray; /* Thin gray border */
     border-radius: 10px; /* Rounded corners */
@@ -102,10 +111,10 @@
     <main>
         <!-- Introduction or main content can go here -->
         <section>
-            <div class="white-line-box">
-        <p class="intro">Hi! I'm Jun Hyun (first name pronounced as <q>Joon-hyeon</q>&mdash;<a href="https://korean-name.com/en/search/준현/"><i>pronunciation guide</i></a>), a 4th-year economics Ph.D. student at University of Pittsburgh. I major in microeconomic theory. My research interest lies in economic contexts in which preferences for non-conventional objects (e.g., beliefs, menus, and preferences) influence our behavior and social interactions. </p>
-<!--         <p class="paper-abstract">This abstract describes another work in progress. The abstract provides insights into the main objectives and preliminary results.</p> -->
-    </div>
+            <div class="box-container"> 
+                <div class="white-line-box">
+                    <p class="intro">Hi! I'm Jun Hyun (first name pronounced as <q>Joon-hyeon</q>&mdash;<a href="https://korean-name.com/en/search/준현/"><i>pronunciation guide</i></a>), a 4th-year economics Ph.D. student at University of Pittsburgh. I major in microeconomic theory. My research interest lies in economic contexts in which preferences for non-conventional objects (e.g., beliefs, menus, and preferences) influence our behavior and social interactions. </p>
+                </div> 
 <!--             <p>Hi! I'm Jun Hyun (first name pronounced as <q>Joon-hyeon</q>&mdash;<a href="https://korean-name.com/en/search/준현/"><i>pronunciation guide</i></a>), a 4th-year economics Ph.D. student at University of Pittsburgh. I major in microeconomic theory. My research interest lies in economic contexts in which preferences for non-conventional objects (e.g., beliefs, menus, and preferences) influence our behavior and social interactions.  </p> -->
 <!--             Welcome to my website where I share my research, CV, and working papers. -->
             <h2>Research interest</h2>
@@ -121,7 +130,8 @@
         <h3 class="paper-title">Timing Decision in Model-based Persuasion </h3>
         <p class="paper-date">December 2024 <a href="Ji 2024. Timing decision in model-based persuasion - beamer.pdf" class="pdf-button">SLIDES</a></p>
 <!--         <p class="paper-abstract">This abstract describes another work in progress. The abstract provides insights into the main objectives and preliminary results.</p> -->
-    </div>
+    </div> 
+</div>                
 <!--             <p>"A Representation of Preference over Preferences"</p> -->
 <!--             <p> <a href="Ji 2024. Preference over Preferences.pdf">A Representation of Preference over Preferences and the Act of Choosing</a>, December 2024</p> -->
 <!--             <p> A Representation of Preference over Preferences and the Act of Choosing, December 2024 <a href="Ji 2024. Preference over Preferences.pdf" class="pdf-button">PDF</a></p> -->
