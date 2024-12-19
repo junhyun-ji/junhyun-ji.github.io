@@ -63,10 +63,23 @@
     background-color: #f9f9f9; /* Light gray background */
     max-width: 600px; /* Optional: Limit the box width 
 /*     width: 600px; /* Optional: Limit the box width */
-    min-width: 400px;
+    min-width: 600px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
 }
 
+        .white-line-box {
+/*     border: 1px solid white; /* White border */ 
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Space inside the box */
+    margin-bottom: 20px; /* Space between multiple boxes */
+    background-color: white; /* White background to match the border */
+    max-width: 600px; /* Optional: Limit the box width 
+/*     width: 600px; /* Optional: Limit the box width */ 
+    min-width: 600px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+}
+        
 .paper-title {
     margin: 0; /* Remove default margin */
     font-size: 18px; /* Title font size */
@@ -91,24 +104,18 @@
     line-height: 1.5; /* Improve readability */
     text-align: left;
 }
-.white-line-box {
-/*     border: 1px solid white; /* White border */ 
-    border: 1px solid #e0e0e0; /* Light gray border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 15px; /* Space inside the box */
-    margin-bottom: 20px; /* Space between multiple boxes */
-    background-color: white; /* White background to match the border */
-    max-width: 600px; /* Optional: Limit the box width 
-/*     width: 600px; /* Optional: Limit the box width */ 
-    min-width: 400px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
-}
         .intro {
     margin-top: 10px; /* Space between title and abstract */
     font-size: 14px; /* Abstract font size */
     color: #333; /* Abstract text color */
     line-height: 1.5; /* Improve readability */
     text-align: left;
+}
+        @media (max-width: 768px) {
+    .paper-box, .white-line-box {
+        min-width: unset; /* Remove minimum width for phones */
+        width: 90%; /* Take up 90% of the screen width */
+    }
 }
     </style>
 </head>
@@ -135,12 +142,10 @@
             <div class="box-container"> 
                 <div class="white-line-box">
                     <p class="intro">Hi! I'm Jun Hyun, a 4th-year economics Ph.D. student at University of Pittsburgh. I major in microeconomic theory. My research interest lies in economic contexts in which preferences for non-conventional objects (e.g., beliefs, menus, and preferences) influence our behavior and social interactions. </p>
+                <p class="intro"><ul>How to pronounce my first name <a href="https://korean-name.com/en/search/준현/" class="pdf-button"><i><q>Joon-hyeon</q></i></a>
+                    </ul> </p>
                 </div> 
-                <div class="white-line-box">
-                    <p class="intro"> 
-                    <ul>How to pronounce my first name <a href="https://korean-name.com/en/search/준현/" class="pdf-button"><i><q>Joon-hyeon</q></i></a>
-                    </ul>
-                </p>
+                
                 </div> 
 <!--             <p>Hi! I'm Jun Hyun (first name pronounced as <q>Joon-hyeon</q>&mdash;<a href="https://korean-name.com/en/search/준현/"><i>pronunciation guide</i></a>), a 4th-year economics Ph.D. student at University of Pittsburgh. I major in microeconomic theory. My research interest lies in economic contexts in which preferences for non-conventional objects (e.g., beliefs, menus, and preferences) influence our behavior and social interactions.  </p> -->
 <!--             Welcome to my website where I share my research, CV, and working papers. -->
