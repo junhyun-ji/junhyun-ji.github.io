@@ -20,13 +20,13 @@
         }
         ul {
         text-align: left;    
-        font-size: 10px; /* Customize font size */
         list-style-type: circle; /* Options: disc, circle, square, none */
         margin-left: 0px; /* Add left margin */
     }
 
     ul li {
-        font-size: 16px; /* Customize font size */
+        text-align: left;   
+        font-size: 12px; /* Customize font size */
         color: #333; /* Change text color */
     }
         .pdf-button {
@@ -43,6 +43,24 @@
 }
 
 .pdf-button:hover {
+    background-color: black; /* Black background on hover */
+    color: white; /* White text on hover */
+}
+
+   .etc-button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 8px; /* Adjust padding to make it shorter in height */
+    font-size: 12px;
+    color: black; /* Black font color */
+    background-color: white; /* White background */
+    text-decoration: none;
+    border: 1px solid black; /* Black border */
+    border-radius: 3px; /* Optional: Keeps the rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.etc-button:hover {
     background-color: black; /* Black background on hover */
     color: white; /* White text on hover */
 }
@@ -142,8 +160,11 @@
             <div class="box-container"> 
                 <div class="white-line-box">
                     <p class="intro">Hi! I'm Jun Hyun, a 4th-year economics Ph.D. student at University of Pittsburgh. I major in microeconomic theory. My research interest lies in economic contexts in which preferences for non-conventional objects (e.g., beliefs, menus, and preferences) influence our behavior and social interactions. </p>
-                <p class="intro"><ul>How to pronounce my first name <a href="https://korean-name.com/en/search/준현/" class="pdf-button"><i><q>Joon-hyeon</q></i></a>
-                    </ul> </p>
+                <p class="intro">
+                    <ul>
+                            <li>How to pronounce my first name <a href="https://korean-name.com/en/search/준현/" class="etc-button"><i><q>Joon-hyeon</q></i></a></li>
+                    </ul> 
+                </p>
                 </div> 
                 
                 </div> 
