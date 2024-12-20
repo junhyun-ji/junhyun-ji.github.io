@@ -319,6 +319,20 @@
                     </span>
                     <button class="see-more-button" onclick="toggleAbstract()">[see more]</button>
                 </div>
+                <script>
+                        function toggleAbstract() {
+                            const hiddenText = document.querySelector('.abstract-hidden');
+                            const button = document.querySelector('.see-more-button');
+                    
+                            if (hiddenText.style.display === 'none' || !hiddenText.style.display) {
+                                hiddenText.style.display = 'inline'; // Show the hidden text
+                                button.textContent = '[see less]'; // Update button text
+                            } else {
+                                hiddenText.style.display = 'none'; // Hide the hidden text
+                                button.textContent = '[see more]'; // Update button text
+                            }
+                        }
+                </script>
             </div>
                 
             <h2>Work in progress</h2>
