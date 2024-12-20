@@ -87,31 +87,6 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
 }
 
-        .shortpaper-box {
-    border: 1px solid gray; /* Thin gray border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 5px 10px; /* Space inside the box
-/*     padding: 5px 15px; /* Reduce padding for a shorter box */ 
-    margin-bottom: 20px; /* Space between multiple boxes */
-    background-color: #f9f9f9; /* Light gray background */
-    max-width: 600px; /* Optional: Limit the box width 
-/*     width: 600px; /* Optional: Limit the box width */
-    min-width: 600px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
-}
-
-        .white-line-box {
-/*     border: 1px solid white; /* White border */ 
-    border: 1px solid #e0e0e0; /* Light gray border */
-    border-radius: 10px; /* Rounded corners */
-    padding: 15px; /* Space inside the box */
-    margin-bottom: 20px; /* Space between multiple boxes */
-    background-color: white; /* White background to match the border */
-    max-width: 600px; /* Optional: Limit the box width 
-/*     width: 600px; /* Optional: Limit the box width */ 
-    min-width: 600px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
-}
         
 .paper-title {
     margin: 0; /* Remove default margin */
@@ -179,9 +154,69 @@
     color: #555; /* Light gray for subtle emphasis */
 }
         @media (max-width: 768px) {
-    .paper-box, .white-line-box {
+    .paper-box, {
         min-width: unset; /* Remove minimum width for phones */
         width: 90%; /* Take up 90% of the screen width */
+    }
+}
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212; /* Dark background */
+        color: #e0e0e0; /* Light text */
+    }
+
+    nav, .paper-abstract, .intro, .paper-title, h2, .paper-date, .teaching-entry, .teaching-entry strong, .innerlist, .innerlist li, .date {
+        color: #e0e0e0; /* Light text for content */
+    }
+
+    ul li {
+        color: #bbbbbb; /* Slightly lighter text for lists */
+    }
+
+    .pdf-button, .etc-button {
+        color: #e0e0e0; /* Light text */
+        background-color: #333333; /* Dark button background */
+        border: 1px solid #555555; /* Lighter border */
+    }
+
+    .pdf-button:hover, .etc-button:hover {
+        background-color: #555555; /* Slightly lighter on hover */
+        color: #ffffff; /* Pure white text */
+    }
+
+    .box-container {
+        text-align: center; /* Ensure alignment stays consistent */
+    }
+
+    .paper-box {
+        background-color: #1e1e1e; /* Darker gray for boxes */
+        border: 1px solid #444444; /* Slightly lighter border */
+        box-shadow: none; /* Remove shadow for a flatter design in dark mode */
+    }
+
+    .paper-title {
+        color: #ffffff; /* Bright title text */
+    }
+
+    .paper-date {
+        color: #bbbbbb; /* Subtle distinction for dates */
+    }
+
+    .paper-abstract, .intro {
+        color: #e0e0e0; /* Light abstract text */
+    }
+
+    #teaching {
+        color: #e0e0e0; /* Light text for teaching section */
+    }
+
+    .innerlist li {
+        color: #cccccc; /* Slightly lighter text for list items */
+    }
+
+    .date {
+        color: #bbbbbb; /* Subtle text color for dates */
     }
 }
     </style>
