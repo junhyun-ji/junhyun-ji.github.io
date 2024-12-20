@@ -150,15 +150,17 @@
 
 .date {
     float: right; /* Align the date to the right */
-/*     font-style: italic; /* Add italics to match LaTeX style */ */
+/*     font-style: italic; /* Add italics to match LaTeX style */ 
     color: #555; /* Light gray for subtle emphasis */
 }
-        @media (max-width: 768px) {
-    .paper-box, {
-        min-width: unset; /* Remove minimum width for phones */
-        width: 90%; /* Take up 90% of the screen width */
-    }
-}
+
+/* @media (max-width: 768px) { */
+/*     .paper-box, { */
+/*         min-width: unset; /* Remove minimum width for phones */ 
+/*         width: 90%; /* Take up 90% of the screen width */ 
+/*     } */
+/* } */
+        
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
     body {
@@ -219,6 +221,21 @@
         color: #bbbbbb; /* Subtle text color for dates */
     }
 }
+
+/* Responsive styles for mobile devices */
+    @media (max-width: 768px) {
+        .paper-box {
+            width: 90%; /* Adjust width to fit mobile screens */
+            max-width: unset;
+            min-width: unset;
+            padding: 10px;
+        }
+
+        .box-container {
+            align-items: stretch; /* Stretch boxes to fit container */
+        }
+    }
+        
     </style>
 </head>
 <body>
