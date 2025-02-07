@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-site-verification" content="3QM7Riv0YtZAKfzPE6JH9XgG_NbdprZThuNu9X0md_Y" />
+    <meta name="msvalidate.01" content="F8C1E7F97DCA91B031184D1FB7968D95" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="description" content="A Representation of Preference over Preferences and the Act of Choosing">
+    <meta name="keywords" content="preference over preferences, second-order preference, meta preference, Jun Hyun Ji.">
+    <meta name="author" content="Jun Hyun Ji">
+    
+    <title>Jun Hyun Ji's Academic Profile</title>
+    <style>
+        nav, .paper-abstract, .intro, .paper-title, h2, .paper-date, .teaching-entry, .teaching-entry strong, .innerlist, .innerlist li, .date {
+            font-family: 'Roboto Slab', serif;
+        }
+        h1, nav { 
+            text-align: center;
+        }
+        ul {
+        text-align: left;    
+        list-style-type: circle; /* Options: disc, circle, square, none */
+        margin-left: 0px; /* Add left margin */
+        }    
+
+    ul li {
+        text-align: left;   
+        font-size: 12px; /* Customize font size */
+        color: #333; /* Change text color */
+    }
+        .pdf-button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 8px; /* Adjust padding to make it shorter in height */
+    font-size: 14px;
+    color: black; /* Black font color */
+    background-color: white; /* White background */
+    text-decoration: none;
+    border: 1px solid black; /* Black border */
+    border-radius: 5px; /* Optional: Keeps the rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.pdf-button:hover {
+    background-color: black; /* Black background on hover */
+    color: white; /* White text on hover */
+}
+
+   .etc-button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 8px; /* Adjust padding to make it shorter in height */
+    font-size: 12px;
+    color: black; /* Black font color */
+    background-color: white; /* White background */
+    text-decoration: none;
+    border: 1px solid black; /* Black border */
+    border-radius: 3px; /* Optional: Keeps the rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.etc-button:hover {
+    background-color: black; /* Black background on hover */
+    color: white; /* White text on hover */
+}
+
+        .box-container {
+    display: flex; /* Enables flexbox for centering */
+    flex-direction: column; /* Aligns boxes in a vertical column */
+    align-items: center; /* Horizontally centers the boxes */
+    justify-content: center; /* Vertically centers the content (if required) */
+    margin: 20px auto; /* Center horizontally with auto margins */
+    max-width: 800px; /* Optional: Limit the width of the container */
+    text-align: center; /* Center the text inside the container */
+}
+        .paper-box {
+    border: 1px solid gray; /* Thin gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Space inside the box
+/*     padding: 5px 15px; /* Reduce padding for a shorter box */ 
+    margin-bottom: 20px; /* Space between multiple boxes */
+    background-color: #f9f9f9; /* Light gray background */
+    max-width: 600px; /* Optional: Limit the box width 
+/*     width: 600px; /* Optional: Limit the box width */
+    min-width: 600px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+}
+
+        
+.paper-title {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Title font size */
+    font-weight: 500; /* Make the title stand out */
+    color: #333; /* Title color */
+    text-align: left;
+/*     transform: scaleX(0.85); /* Compress the width to 80% */ 
+
+}
+
+        
+.paper-date {
+    margin: 0;
+    font-size: 14px; /* Slightly smaller than the title */
+    color: #777; /* Gray color for distinction */
+/*     font-style: italic; /* Italicized for emphasis */ */
+    margin-bottom: 10px; /* Space between the date and the abstract */
+    text-align: left;
+}
+        
+.paper-abstract {
+    margin-top: 10px; /* Space between title and abstract */
+    font-size: 14px; /* Abstract font size */
+    color: #222; /* Abstract text color */
+    line-height: 2; /* Improve readability */
+    text-align: left;
+}
+        .intro {
+    margin-top: 10px; /* Space between title and abstract */
+    font-size: 14px; /* Abstract font size */
+    color: #222; /* Abstract text color */
+    line-height: 2; /* Improve readability */
+    text-align: left;
+}
+
+.abstract-hidden {
+            display: none; /* Initially hide the rest of the abstract */
+}
+
+.see-more-button {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 12px;
+            border: none;
+            background: none;
+            padding: 0;
+}
+        
+#teaching {
+    margin: 20px 0;
+}
+
+.teaching-entry {
+    margin-bottom: 1em;
+    text-align: left;
+    font-size: 14px;
+/*     font-weight: 300; */
+}
+
+.teaching-entry strong {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+}
+
+.innerlist {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Align items to the left edge */
+    margin-top: 0.5em;
+}
+
+.innerlist li {
+    margin-bottom: 0.2em; /* Spacing between items */
+}
+
+.date {
+    float: right; /* Align the date to the right */
+/*     font-style: italic; /* Add italics to match LaTeX style */ 
+    color: #555; /* Light gray for subtle emphasis */
+}
+
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212; /* Dark background */
+        color: #e0e0e0; /* Light text */
+    }
+
+    nav, .paper-abstract, .intro, .paper-title, h2, .paper-date, .teaching-entry, .teaching-entry strong, .innerlist, .innerlist li, .date {
+        color: #e0e0e0; /* Light text for content */
+    }
+
+    ul li {
+        color: #bbbbbb; /* Slightly lighter text for lists */
+    }
+
+    .pdf-button, .etc-button {
+        color: #e0e0e0; /* Light text */
+        background-color: #333333; /* Dark button background */
+        border: 1px solid #555555; /* Lighter border */
+    }
+
+    .pdf-button:hover, .etc-button:hover {
+        background-color: #555555; /* Slightly lighter on hover */
+        color: #ffffff; /* Pure white text */
+    }
+
+    .box-container {
+        text-align: center; /* Ensure alignment stays consistent */
+    }
+
+    .paper-box {
+        background-color: #1e1e1e; /* Darker gray for boxes */
+        border: 1px solid #444444; /* Slightly lighter border */
+        box-shadow: none; /* Remove shadow for a flatter design in dark mode */
+    }
+
+    .paper-title {
+        color: #ffffff; /* Bright title text */
+    }
+
+    .paper-date {
+        color: #bbbbbb; /* Subtle distinction for dates */
+    }
+
+    .paper-abstract, .intro {
+        color: #e0e0e0; /* Light abstract text */
+    }
+
+    #teaching {
+        color: #e0e0e0; /* Light text for teaching section */
+    }
+
+    .innerlist li {
+        color: #cccccc; /* Slightly lighter text for list items */
+    }
+
+    .date {
+        color: #bbbbbb; /* Subtle text color for dates */
+    }
+    
+    a {
+                color: yellow; /* Change hyperlink color to yellow */
+                text-decoration: underline; /* Optional: Keep underline for visibility */
+    }
+
+    .see-more-button {
+        color: yellow; /* Change to yellow in dark mode */
+    }
+}
+
+/* Responsive styles for mobile devices */
+    @media (max-width: 768px) {
+        .paper-box {
+            width: 90%; /* Adjust width to fit mobile screens */
+            max-width: unset;
+            min-width: unset;
+            padding: 10px;
+        }
+
+        .box-container {
+            align-items: stretch; /* Stretch boxes to fit container */
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="profile.jpg" alt="Jun Hyun Ji" style="display: block; margin: 0 auto; width: 180px; height: auto;">
+        <h1>Jun Hyun Ji</h1>
+<!--         <p>(Website under construction)</p> -->
+    </header>
+    <nav>
+        <!-- Navigation links can go here -->
+<!--         <a href="CV13_Jun Hyun Ji.pdf">CV</a>  |  -->
+        <a href="CV14_Jun Hyun Ji-3.pdf" class="pdf-button">CV</a>
+        <a href="mailto:juj25@pitt.edu" class="pdf-button">juj25@pitt.edu</a>
+        
+<!--         |  -->
+<!--         <a href="research.html">Research</a> |  -->
+<!--         <a href="working-papers.html">Working Papers</a> |  -->
+<!--         <a href="contact.html">Contact</a> -->
+    </nav>
+    
+    <main>
+
+        <section>
+            <div class="box-container"> 
+                <div class="paper-box">
+                    <p class="intro">Hi! I'm Jun Hyun, a 4th-year  Ph.D. student in the <a href="https://www.econ.pitt.edu">Department of Economics</a> at the  <a href="https://www.pitt.edu">University of Pittsburgh</a>, majoring in microeconomic theory. </p>
+                      <nav> 
+                    <a href="https://korean-name.com/en/search/준현/" class="etc-button">How to pronounce my first name: <q>Joon-hyeon</q></a>
+                </nav>
+                </div> 
+
+            <h2>Research Interest</h2>
+             <div class="paper-box">
+                 <div class="teaching-entry">Microeconomic theory
+                 </div>
+
+                 </div> 
+                
+             <h2>Working Paper</h2>
+            <div class="paper-box">
+                <h2 class="paper-title", id="preference-over-preferences">A Representation of Preference over Preferences and the Act of Choosing </h2> 
+                <p class="paper-date">January 2025 <a href="Preference_over_preferences.pdf" class="etc-button">PDF</a></p>
+                <div class="paper-abstract">
+                    This paper studies how individuals value the act of choosing itself by using the concept <q><i>preference over preferences</i></q>.
+                    <span class="abstract-hidden">
+                        The agent in my model has no preference over outcomes. Instead, she prefers some preference relation if she prefers <i>behaving</i> as if she holds that preference (e.g., <q>preferring \(x\) to \(y\)</q> is preferred to <q>preferring \(y\) to \(x\)</q> if she values the act of willingly giving up \(y\) for \(x\) more than giving up \(x\) for \(y\)). My axioms yield a unique representation that identifies (i) the individual’s <i>ideal</i> preference over outcomes, and (ii) a choice rule that selects a <i>reference option</i> against which the act of choosing from each menu is assessed. This choice rule captures the individual’s paternalistic attitude toward willful choices (manifested as guilt, pride, the joy of freedom, or the fear of <i>the act</i> of making mistakes) which is inherently menu-dependent. Without relying on menu choices or econometric models of welfare measures, I provide a revealed-preference approach to testing my model even when the agent cares about outcomes. Welfare implications are discussed. <a href="2oP_2024.12.21_2.pdf"> Click to view paper.</a>
+                    </span>
+                    <button class="see-more-button" onclick="toggleAbstract()">[see more]</button>
+                </div>
+                <script>
+                        function toggleAbstract() {
+                            const hiddenText = document.querySelector('.abstract-hidden');
+                            const button = document.querySelector('.see-more-button');
+                    
+                            if (hiddenText.style.display === 'none' || !hiddenText.style.display) {
+                                hiddenText.style.display = 'inline'; // Show the hidden text
+                                button.textContent = '[see less]'; // Update button text
+                            } else {
+                                hiddenText.style.display = 'none'; // Hide the hidden text
+                                button.textContent = '[see more]'; // Update button text
+                            }
+                        }
+                </script>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "http://schema.org",
+                  "@type": "ScholarlyArticle",
+                  "headline": "A Representation of Preference over Preferences and the Act of Choosing",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Jun Hyun Ji"
+                  },
+                  "datePublished": "2025-01",
+                  "url": "https://junhyun-ji.github.io/Preference_over_preferences.pdf",
+                  "publisher": {
+                    "@type": "Organization",
+                    "name": "University of Pittsburgh"
+                  }
+                }
+                </script>
+            </div>
+                
+            <h2>Work in progress</h2>
+            <div class="paper-box">
+                <h3 class="paper-title">Timing Decision in Model-based Persuasion </h3>
+                <p class="paper-date">December 2024 <a href="Ji_2024.Timing_decision_in_model_based_persuasion_beamer.pdf" class="etc-button">SLIDES</a></p>
+            </div>
+                
+   <h2>Education</h2>
+<div class="paper-box">
+    <div class="teaching-entry">
+        <strong>Ph.D.</strong> in Economics, University of Pittsburgh (expected) <span class="date">2026</span>
+    </div>
+    <div class="teaching-entry">
+        <strong>M.A.</strong> in Economics, Sogang University <span class="date">2020</span>
+    </div>
+    <div class="teaching-entry">
+        <strong>B.A.</strong> in Economics, Sogang University <span class="date">2016</span>
+    </div>
+
+    </div>  
+
+                
+     <h2>Teaching</h2>
+<div class="paper-box">
+    <div class="teaching-entry">
+        <strong>Instructor</strong>, University of Pittsburgh
+        <ul class="innerlist">
+            <li>Game Theory Principles <span class="date">Summer 2024</span></li>
+        </ul>
+    </div>
+
+    <div class="teaching-entry">
+        <strong>Teaching Assistant</strong> (Delivered class), University of Pittsburgh
+        <ul class="innerlist">
+            <li>Introduction to Microeconomic Theory  <span class="date">Spring 2023, 2024</span></li>
+            <li>(Ph.D.) Mathematical Methods of Economic Analysis  <span class="date">Fall 2023</span></li>
+<!--             <li>Introduction to Microeconomic Theory <span class="date">Spring 2023</span></li> -->
+            <li>(Ph.D.) Microeconomic Theory I <span class="date">Fall 2022</span></li>
+        </ul>
+    </div>
+
+</div>        
+
+   
+
+    <h2>Exercises Prior to Ph.D. program</h2>
+            <div class="paper-box">
+                 <h3 class="paper-title">Two Bidder Procurement Auction with Asymmetric Post-auction Bankruptcy Risk</h3>
+                <p class="paper-date">2019 <a href="WritingSample_Asymmetric Auction2020.pdf" class="etc-button">PDF</a></p>
+            </div>
+</div>    
+
+        </section>
+    </main>
+
+     
+</body>
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+</html>
