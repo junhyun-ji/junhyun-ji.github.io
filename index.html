@@ -74,7 +74,15 @@
             font-size: 24px;
             font-weight: bold;
         }
-
+        /* Less Important Section Title (Smaller, e.g., "Work in Progress") */
+        .section-title-small {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 18px;  /* Similar to <h3> */
+            font-weight: bold;
+        }
         /* Horizontal lines */
         .section-title::before,
         .section-title::after,
@@ -86,15 +94,7 @@
             background-color: black;
             margin: 0 15px;
         }
-       /* Less Important Section Title (Smaller, e.g., "Work in Progress") */
-        .section-title-small {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-size: 18px;  /* Similar to <h3> */
-            font-weight: normal;
-        }
+       
        .abstract-hidden {
             display: none; /* Initially hide the rest of the abstract */
         }
