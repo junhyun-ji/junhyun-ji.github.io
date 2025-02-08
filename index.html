@@ -59,6 +59,31 @@
             margin-top: 20px;
             text-align: center;
         }
+       section {
+        text-align: center;
+        margin: 50px 0;
+        position: relative;
+        }
+
+        /* Section Title with Horizontal Lines */
+        .section-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Horizontal lines */
+        .section-title::before,
+        .section-title::after {
+            content: "";
+            flex: 1;
+            height: 2px;
+            background-color: black;
+            margin: 0 15px;
+        }
 
         /* Dark mode */
         @media (prefers-color-scheme: dark) {
@@ -88,6 +113,10 @@
             }
             .back-link a {
                 color: yellow;
+            }
+            .section-title::before,
+            .section-title::after {
+                background-color: #e0e0e0;
             }
         }
     </style>
