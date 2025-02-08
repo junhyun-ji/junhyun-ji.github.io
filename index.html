@@ -77,12 +77,23 @@
 
         /* Horizontal lines */
         .section-title::before,
-        .section-title::after {
+        .section-title::after,
+        .section-title-small::before,
+        .section-title-small::after {
             content: "";
             flex: 1;
             height: 2px;
             background-color: black;
             margin: 0 15px;
+        }
+       /* Less Important Section Title (Smaller, e.g., "Work in Progress") */
+        .section-title-small {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 18px;  /* Similar to <h3> */
+            font-weight: normal;
         }
        .abstract-hidden {
             display: none; /* Initially hide the rest of the abstract */
@@ -129,7 +140,9 @@
                 color: yellow;
             }
             .section-title::before,
-            .section-title::after {
+            .section-title::after,
+            .section-title-small::before,
+            .section-title-small::after {
                 background-color: #e0e0e0;
             }
             .see-more-button {
@@ -168,7 +181,7 @@
     <div class="paper-abstract">
         This paper studies how individuals value the act of choosing itself by using the concept <q><i>preference over preferences</i></q>.
         <span class="abstract-hidden">
-            The agent in my model has no preference over outcomes. Instead, she prefers some preference relation if she prefers <i>behaving</i> as if she holds that preference (e.g., <q>preferring \(x\) to \(y\)</q> is preferred to <q>preferring \(y\) to \(x\)</q> if she values the act of willingly giving up \(y\) for \(x\) more than giving up \(x\) for \(y\)). My axioms yield a unique representation that identifies (i) the individual’s <i>ideal</i> preference over outcomes, and (ii) a choice rule that selects a <i>reference option</i> against which the act of choosing from each menu is assessed. This choice rule captures the individual’s paternalistic attitude toward willful choices (manifested as guilt, pride, the joy of freedom, or the fear of <i>the act</i> of making mistakes) which is inherently menu-dependent. Without relying on menu choices or econometric models of welfare measures, I provide a revealed-preference approach to testing my model even when the agent cares about outcomes. Welfare implications are discussed. <a href="2oP_2024.12.21_2.pdf"> Click to view paper.</a>
+            The agent in my model has no preference over outcomes. Instead, she prefers some preference relation if she prefers <i>behaving</i> as if she holds that preference (e.g., <q>preferring \(x\) to \(y\)</q> is preferred to <q>preferring \(y\) to \(x\)</q> if she values the act of willingly giving up \(y\) for \(x\) more than giving up \(x\) for \(y\)). My axioms yield a unique representation that identifies (i) the individual’s <i>ideal</i> preference over outcomes, and (ii) a choice rule that selects a <i>reference option</i> against which the act of choosing from each menu is assessed. This choice rule captures the individual’s paternalistic attitude toward willful choices (manifested as guilt, pride, the joy of freedom, or the fear of <i>the act</i> of making mistakes) which is inherently menu-dependent. Without relying on menu choices or econometric models of welfare measures, I provide a revealed-preference approach to testing my model even when the agent cares about outcomes. Welfare implications are discussed.
         </span>
         <button class="see-more-button" onclick="toggleAbstract()">[see more]</button>
     </div>
