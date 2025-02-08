@@ -108,7 +108,11 @@
                     background: none;
                     padding: 0;
         }
-        
+        .date {
+                float: right; /* Align the date to the right */
+            /*     font-style: italic; /* Add italics to match LaTeX style */ 
+                color: #555; /* Light gray for subtle emphasis */
+        }
 
         /* Dark mode */
         @media (prefers-color-scheme: dark) {
@@ -148,6 +152,10 @@
             .see-more-button {
                 color: yellow; /* Change to yellow in dark mode */
             }
+            .date {
+                color: #bbbbbb; /* Subtle text color for dates */
+            }
+            
             
         }
     </style>
@@ -243,12 +251,12 @@
 
 <section>   
     <h1 class="section-title">Teaching</h1>
-    <h3><strong>Instructor</strong> </h3>
-    <p>Game Theory Principles <span>Summer 2024</span></p>
-    <h3><strong>Teaching Assistant</strong> </h3>
-    <p>Introduction to Microeconomic Theory  <span>Spring 2023, 2024</span></p>
-    <p>(Ph.D.) Mathematical Methods of Economic Analysis  <span>Fall 2023</span></p>
-    <p>(Ph.D.) Microeconomic Theory I <span>Fall 2022</span></p>
+    <h3 style="text-align: left;"><strong>Instructor</strong> </h3>
+    <p style="text-align: left;">Game Theory Principles <span class="date">Summer 2024</span></p>
+    <h3 style="text-align: left;"><strong>Teaching Assistant</strong> </h3>
+    <p style="text-align: left;">Introduction to Microeconomic Theory  <span class="date">Spring 2023, 2024</span></p>
+    <p style="text-align: left;">(Ph.D.) Mathematical Methods of Economic Analysis  <span class="date">Fall 2023</span></p>
+    <p style="text-align: left;">(Ph.D.) Microeconomic Theory I <span class="date">Fall 2022</span></p>
 </section>
     
    
