@@ -84,6 +84,20 @@
             background-color: black;
             margin: 0 15px;
         }
+       .abstract-hidden {
+            display: none; /* Initially hide the rest of the abstract */
+        }
+        
+        .see-more-button {
+                    color: blue;
+                    cursor: pointer;
+                    text-decoration: underline;
+                    font-size: 12px;
+                    border: none;
+                    background: none;
+                    padding: 0;
+        }
+        
 
         /* Dark mode */
         @media (prefers-color-scheme: dark) {
@@ -118,6 +132,10 @@
             .section-title::after {
                 background-color: #e0e0e0;
             }
+            .see-more-button {
+                color: yellow; /* Change to yellow in dark mode */
+            }
+            
         }
     </style>
 </head>
